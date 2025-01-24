@@ -1,4 +1,10 @@
 declare module 'str-utils' {
-    // export const ...
-    // export function ...
+
+    type StringManipulator = (input: string) => string;
+
+    export const strReverse: StringManipulator;
+    export const strToLower: StringManipulator;
+    export const strToUpper: StringManipulator;
+    export const strRandomize: StringManipulator;
+    export const strInvertCase: StringManipulator;
 }
